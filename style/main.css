@@ -1,0 +1,167 @@
+:root {
+    --preto: #06070b;
+    --cinza: #2b2e3f;
+    --branco: #ffffff;
+    --vermelho: #FF0000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* elemetos base*/
+
+body {
+    background: var(--cinza);
+    font-family: 'Arial', Times, serif;
+    color: #ffffff;
+
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Balck', Times;
+    font-size: 40px;
+    margin-left: 5px;
+
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--branco);
+    margin: 10px;
+}
+
+
+header nav a:hover {
+    color: #FF0000;
+}
+
+/* Dados do filme*/
+.filme-pricipal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)),
+        url("/img/FKC5caUVIAYKE4y-scaled.jpg");
+
+    height: 500px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+
+}
+
+.filme-pricipal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+}
+
+.titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: #ffffff;
+    border-radius: 5px;
+    color: black;
+    padding: 15px 30px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: .3s ease all;
+
+}
+
+.botaoinfo {
+    background-color: #ffffff;
+    border-radius: 5px;
+    color: black;
+    padding: 15px 30px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botaoinfo:hover {
+    background-color: #8a8c8d;
+}
+
+.botao:hover {
+    background-color: #8a8c8d;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.botaoinfo i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.filme-pricipal .container {
+    width: 70%;
+}
+
+.box-filme:hover{
+    box-shadow:
+                1px 1px #53a7ea,
+                2px 2px #53a7ea,
+                3px 3px #53a7ea;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+}
+
+.box-filme{
+    margin: 8px;
+    width: 100%;
+    height: 100%;   
+    display: block;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.catfilmes{
+    margin: 5px;
+}
+
+.pfbutton{
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 100%;
+    
+
+}
+.pfbutton:hover{
+
+    box-shadow:
+                1px 1px #53a7ea,
+                2px 2px #53a7ea,
+                3px 3px #53a7ea;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+}
+
+.carrosel-filme{
+    margin-top: 5px;
+}
+
+
