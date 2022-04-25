@@ -1,0 +1,84 @@
+:root {
+    --preto: #06070b;
+    --cinza: #2b2e3f;
+    --branco: #ffffff;
+    --vermelho: #FF0000;
+}
+
+
+
+body {
+    background: var(--cinza);
+    font-family: 'Arial', Times, serif;
+    color: #ffffff;
+
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+section {
+    width: 500px;
+    margin: auto;
+    border-radius: 15px;
+
+}
+
+/* Botao voltar para a HOME*/
+
+.btvoltar {
+    background-color: var(--branco);
+    border-radius: 10px;
+    padding: 15px;
+    margin: auto;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Balck', Times;
+    font-size: 40px;
+    margin-left: 5px;
+
+}
+
+/*NOME ACIMA DO PERFIL*/
+.perfilogo{
+    font-size: 40px;
+}
+
+/*Foto Perfil usuario*/
+
+.fotobg {
+    border-radius: 150px;
+    margin: auto;
+    margin-bottom: 150px
+}
+
+/* lista de fotos do perfil*/
+
+.carrosel-fotos {
+    margin-top: 5px;
+}
+
+.box-filme:hover {
+    box-shadow:
+        1px 1px #53a7ea,
+        2px 2px #53a7ea,
+        3px 3px #53a7ea;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+}
+
+.box-filme {
+    margin: 8px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    cursor: pointer;
+    border-radius: 5px;
+}
