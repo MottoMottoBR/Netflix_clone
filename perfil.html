@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
 </head>
 
-<body onload="carregar()">
+<body>
     <header>
         <div class="container">
             <h2 class="logo">PIPOCANDO</h2>
@@ -30,22 +30,26 @@
     <section>
         <div class="perfiltitulo">
             <h3 class="perfilogo"> Perfil de Usuario </h3>
-            <img id="fotobg" src="/img/blank-profile-picture-973460__340.webp" alt="">                        
-        </div>       
+            <img id="fotoperfil" src="/img/blank-profile-picture-973460__340.webp" alt="">                                   
+        </div>            
+     </section>
+     <div>
+         
+     </div>
 
-    </section>
+    
     
 
     <div class="carrosel-fotos">
         <div class="owl-carousel owl-theme">
             <div class="item1">
-                <img class="item1" src="img/scale.png" alt="" onclick="mudarfoto();">
+                <img id="primeiro" src="img/scale.png" alt="" onclick="img01();">
             </div>
             <div class="item2">
-                <img class="box-filme" src="img/baixados.jfif" alt="" onclick="mudarfoto2();">                
+                <img class="box-filme" src="img/vnegra.jpeg" alt ="" onclick="img02();">                
             </div>
             <div class="item3">
-                <img class="box-filme" src="img/scale.png" alt="">
+                <img class="box-filme" src="img/omearanha.jpeg" alt="" onclick="img03();">
             </div>
             <div class="item4">
                 <img class="box-filme" src="img/scale.png" alt="">
@@ -76,7 +80,7 @@
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/setup.js"></script>
-    <script src="perfil.js"></script>
+    <script src="js/perfil.js"></script>
 
 </body>
 

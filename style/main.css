@@ -5,6 +5,7 @@
     --cinza: #2b2e3f;
     --branco: #ffffff;
     --vermelho: #FF0000;
+  
 }
 
 * {
@@ -52,8 +53,7 @@ header nav a:hover {
 /* Dados do filme*/
 .filme-pricipal {
     font-size: 16px;
-    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)),
-        url("/img/FKC5caUVIAYKE4y-scaled.jpg");
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50));
 
     height: 500px;
     background-size: cover;
@@ -121,6 +121,11 @@ header nav a:hover {
 
 .filme-pricipal .container {
     width: 70%;
+}
+
+/*fundo da capa do filme*/
+.backgroundfilmes{
+   
 }
 
 .box-filme:hover{

@@ -1,22 +1,16 @@
-function mudarfoto() {
-
-    var fotoperfil = window.document.getElementById("fotobg")
-    document.getElementById("fotobg").src = "img/scale.png";
-
+function img01() {
+    document.getElementById("fotoperfil").src = "img/scale.png";
 }
 
-function mudarfoto2() {
-
-    var fotoperfil = window.document.getElementById("fotobg")
-    document.getElementById("fotobg").src = "img/baixados.jfif";
-
+function img02() {
+    document.getElementById("fotoperfil").src = "img/vnegra.jpeg";
 }
-function carregar() {
+
+
+
+function img03() {
     
-    var fotoperfil = window.document.getElementById("fotobg")
+    document.getElementById("fotoperfil").src = "img/omearanha.jpeg";
 
 }
-
-
-
 
