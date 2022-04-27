@@ -53,7 +53,8 @@ header nav a:hover {
 /* Dados do filme*/
 .filme-pricipal {
     font-size: 16px;
-    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50));
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)),
+    url(/img/FKC5caUVIAYKE4y-scaled.jpg);   
 
     height: 500px;
     background-size: cover;
@@ -62,13 +63,24 @@ header nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-
+    overflow: auto;
 
 }
 
-.filme-pricipal .descricao {
-    margin-top: 10px;
-    margin-bottom: 40px;
+
+.carrosel-filme{
+    margin-left: 15px;
+    
+}
+.box-filme{
+    width: 100%;
+    transform: scale(0.9);        
+    transition: all ease 0.2s;
+    cursor: pointer;
+
+}
+.box-filme:hover{
+    transform: scale(1);
 
 }
 
@@ -124,18 +136,8 @@ header nav a:hover {
 }
 
 /*fundo da capa do filme*/
-.backgroundfilmes{
-   
-}
 
-.box-filme:hover{
-    box-shadow:
-                1px 1px #53a7ea,
-                2px 2px #53a7ea,
-                3px 3px #53a7ea;
-        -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
-}
+
 
 .box-filme{
     margin: 8px;
@@ -169,6 +171,11 @@ header nav a:hover {
 
 .carrosel-filme{
     margin-top: 5px;
+}
+
+.filme-pricipal .banner_img{
+    margin-top: 450;
+    background-color:#FF0000
 }
 
 
