@@ -1,11 +1,9 @@
-
-   
 :root {
     --preto: #06070b;
     --cinza: #2b2e3f;
     --branco: #ffffff;
     --vermelho: #FF0000;
-  
+
 }
 
 * {
@@ -46,49 +44,50 @@ header nav a {
 }
 
 
+
 header nav a:hover {
     color: #FF0000;
 }
 
-/* Dados do filme*/
-.filme-pricipal {
-    font-size: 16px;
-    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)),
-    url(/img/FKC5caUVIAYKE4y-scaled.jpg);   
-
-    height: 500px;
-    background-size: cover;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    overflow: auto;
-
-}
-
-
-.carrosel-filme{
-    margin-left: 15px;
-    
-}
-.box-filme{
+banner_principal{
     width: 100%;
-    transform: scale(0.9);        
+}
+
+
+/* BANNER E INFO PRINCIPAL*/
+
+
+
+/* Dados do filme*/
+.filme-principal {
+    font-size: 16px;
+    height: 100%;
+
+}
+
+
+.carrosel-filme {
+    margin-left: 5px;
+    margin: auto;
+
+}
+
+.box-filme {
+    width: 100%;
+    transform: scale(1);
     transition: all ease 0.2s;
     cursor: pointer;
 
 }
-.box-filme:hover{
+
+.box-filme:hover {
     transform: scale(1);
-
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 2px
 }
 
-.titulo {
-    margin-top: 15%;
-    font-size: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+
 
 .botao {
     background-color: #ffffff;
@@ -128,54 +127,51 @@ header nav a:hover {
 }
 
 .container {
-    margin-left: 20px;
+    display: inline-block;
+    position: relative;
 }
 
-.filme-pricipal .container {
-    width: 70%;
-}
+
+
 
 /*fundo da capa do filme*/
 
-
-
-.box-filme{
+.box-filme {
     margin: 8px;
-    width: 100%;
-    height: 100%;   
+    width: 450px;
+    height: 100%;
     display: block;
     cursor: pointer;
     border-radius: 5px;
 }
 
-.catfilmes{
-    margin: 5px;
-}
-
-.pfbutton{
-    margin: 2px;
-    cursor: pointer;
-    border-radius: 100%;
+.img_banner {
+    width: 720px;
+    height: 450px;
     
 
 }
-.pfbutton:hover{
 
+
+
+
+.catfilmes {
+    margin: 5px;
+}
+
+.pfbutton {
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 100%;
+
+
+}
+
+.pfbutton:hover {
     box-shadow:
-                1px 1px #53a7ea,
-                2px 2px #53a7ea,
-                3px 3px #53a7ea;
-        -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
+        1px 1px #53a7ea,
+        2px 2px #53a7ea,
+        3px 3px #53a7ea;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
 }
-
-.carrosel-filme{
-    margin-top: 5px;
-}
-
-.filme-pricipal .banner_img{
-    margin-top: 450;
-    background-color:#FF0000
-}
-
-
