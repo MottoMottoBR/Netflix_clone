@@ -4,6 +4,8 @@
     --branco: #ffffff;
     --vermelho: #FF0000;
 
+
+
 }
 
 * {
@@ -49,22 +51,50 @@ header nav a:hover {
     color: #FF0000;
 }
 
-banner_principal{
-    width: 100%;
-}
 
 
 /* BANNER E INFO PRINCIPAL*/
+.filme-principal {
+    font-size: 20px;
+
+
+}
+
+
+
+.filme-principal {
+    margin-bottom: 40px;
+}
+
+
+
+.descricao {
+    margin-left: 15px;
+    justify-content: center;
+
+
+}
+
+
+.img_bg {
+
+    height: 700px;
+    background-size: cover;
+
+}
+
+.botoes {
+    margin: 15px;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
 
 
 
 /* Dados do filme*/
-.filme-principal {
-    font-size: 16px;
-    height: 100%;
-
-}
-
 
 .carrosel-filme {
     margin-left: 5px;
@@ -148,7 +178,7 @@ banner_principal{
 .img_banner {
     width: 720px;
     height: 450px;
-    
+
 
 }
 

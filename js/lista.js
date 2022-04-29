@@ -1,4 +1,5 @@
 
+var img = document.getElementsByClassName("--imgbg");
 
 function filme01() {
     document.getElementById('titulo')
