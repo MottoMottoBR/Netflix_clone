@@ -3,9 +3,6 @@
     --cinza: #2b2e3f;
     --branco: #ffffff;
     --vermelho: #FF0000;
-
-
-
 }
 
 * {
@@ -14,13 +11,13 @@
     box-sizing: border-box;
 }
 
+
 /* elemetos base*/
 
 body {
     background: var(--cinza);
     font-family: 'Arial', Times, serif;
     color: #ffffff;
-
 }
 
 header .container {
@@ -28,7 +25,6 @@ header .container {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
 }
 
 header .logo {
@@ -36,59 +32,93 @@ header .logo {
     font-family: 'Arial Balck', Times;
     font-size: 40px;
     margin-left: 5px;
-
 }
 
 header nav a {
     text-decoration: none;
     color: var(--branco);
     margin: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
-
+.menu {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
 
 header nav a:hover {
     color: #FF0000;
 }
 
 
-
-/* BANNER E INFO PRINCIPAL*/
-.filme-principal {
-    font-size: 20px;
-
-
-}
-
+/* Banner Pincipal*/
 
 
 .filme-principal {
-    margin-bottom: 40px;
-}
-
-
-
-.descricao {
-    margin-left: 15px;
-    justify-content: center;
-
-
-}
-
-
-.img_bg {
-
-    height: 700px;
+    font-size: 16px;
+    height: 650px;
+    background-image: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)), url(/img/FKC5caUVIAYKE4y-scaled.jpg);
     background-size: cover;
-
-}
-
-.botoes {
-    margin: 15px;
-    display: inline-block;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 80px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.filme-principal .container {
+    width: 80%;
+}
+
+.titulo {
+    margin-left: 15px;
+    margin-top: 15px;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    margin-left: 15px;
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.4s ease all;
+}
+
+.botao:hover {
+    background-color: #ffffff;
+    color: #06070b;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+/* Estilo Perfil*/
+.modal-dialog {
+    color: #2b2e3f;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+
+/*Perfil de usuario*/
+
+#fotoperfil{
+    background-image: url("/img/scale\ \(6\).png");
 
 }
 
@@ -98,8 +128,6 @@ header nav a:hover {
 
 .carrosel-filme {
     margin-left: 5px;
-    margin: auto;
-
 }
 
 .box-filme {
@@ -107,7 +135,6 @@ header nav a:hover {
     transform: scale(1);
     transition: all ease 0.2s;
     cursor: pointer;
-
 }
 
 .box-filme:hover {
@@ -117,91 +144,10 @@ header nav a:hover {
     padding: 2px
 }
 
-
-
-.botao {
-    background-color: #ffffff;
-    border-radius: 5px;
-    color: black;
-    padding: 15px 30px;
-    margin-right: 15px;
-    cursor: pointer;
-    transition: .3s ease all;
-
-}
-
-.botaoinfo {
-    background-color: #ffffff;
-    border-radius: 5px;
-    color: black;
-    padding: 15px 30px;
-    margin-right: 15px;
-    cursor: pointer;
-    transition: .3s ease all;
-}
-
-.botaoinfo:hover {
-    background-color: #8a8c8d;
-}
-
-.botao:hover {
-    background-color: #8a8c8d;
-}
-
-.botao i {
-    margin-right: 8px;
-}
-
-.botaoinfo i {
-    margin-right: 8px;
-}
-
-.container {
-    display: inline-block;
-    position: relative;
-}
-
-
-
-
-/*fundo da capa do filme*/
-
 .box-filme {
     margin: 8px;
-    width: 450px;
+    width: 300px;
     height: 100%;
-    display: block;
     cursor: pointer;
     border-radius: 5px;
-}
-
-.img_banner {
-    width: 720px;
-    height: 450px;
-
-
-}
-
-
-
-
-.catfilmes {
-    margin: 5px;
-}
-
-.pfbutton {
-    margin: 2px;
-    cursor: pointer;
-    border-radius: 100%;
-
-
-}
-
-.pfbutton:hover {
-    box-shadow:
-        1px 1px #53a7ea,
-        2px 2px #53a7ea,
-        3px 3px #53a7ea;
-    -webkit-transform: translateX(-3px);
-    transform: translateX(-3px);
 }

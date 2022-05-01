@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/main.css">
 
     <!--responsividade -->
     <link rel="stylesheet" href="style/reponsive.css">
 
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+
     <!-- owl css -->
     <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="style/main.css">
 
     <title>PIPOCANDO</title>
 </head>
@@ -20,91 +22,133 @@
 <body>
     <header>
         <div class="container">
-            <h2 class="logo">PIPOCANDO</h2>
-            <nav>
+            <h2 class="logo">PipocaFlix</h2>
+            <nav class="menu">
+                <i class="fa-solid fa-house"></i>
                 <a href="#">Inicio </a>
+                <i class="fa-solid fa-house"></i>
                 <a href="#">Séries</a>
+                <i class="fa-solid fa-house"></i>
                 <a href="#">Filmes</a>
-                <a href="#">Documentarios</a>
+                <i class="fa-solid fa-heart"></i>
+                <a href="#">Favoritos</a>
+
             </nav>
             <div>
-                <button class="pfbutton">
-                    <a href="perfil.html"> <img class="pfoto" src="/img/blank-profile-picture-973460__340.webp"
-                            alt="Imagem de Perfil" width="40px"></a>
+                <button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal">
+                    <img id="fotoperfil" src="/img/blank-profile-picture-973460__340.webp" alt="" width="50" />
                 </button>
             </div>
         </div>
     </header>
-
-
-    <!-- IMAGEM DO BANNER PRINCIPAL-->
     <main>
-        <div class="filme-principal">
+        <div class="filme-principal" id="bannerprincipal">
             <div class="container">
-                <div class="img_bg" style="background-image:url(/img/FKC5caUVIAYKE4y-scaled.jpg)">
-                    <div class="descricao">
-                        <h3 class="titulo">BATAMAN 2022</h3>
-                        <p>pós dois anos espreitando as ruas como Batman e aterrorizando o mundo do
-                            crime,
-                            Bruce Wayne se encontra nas profundezas mais sombrias de Gotham City. Com pouquíssimos
-                            aliados
-                            confiáveis dentro da rede corrupta de autoridades e grandes figuras da cidade.</p>
-                        <div class="botoes">
-                            <button role="button">
-                                VER TRAILER
-                            </button>
-                            <button role="button">
-                                ADICIONAR AO FAVORITOS
-                            </button>
-                        </div>
-                    </div>
+                <h3 class="titulo" id="titulo">HOUSE OF CARDS</h3>
+                <p class="descricao" id="descricao"> Após dois anos espreitando as ruas como Batman e aterrorizando o
+                    mundo do crime, Bruce Wayne se encontra nas profundezas mais sombrias de Gotham City. Com
+                    pouquíssimos aliados confiáveis dentro da rede corrupta de autoridades e grandes figuras da cidade,
+                    o vigilante solitário se estabeleceu como a personificação da vingança para a população.</p>
+                <div class="botoes">
+                    <button role="button" id="trailer" class="botao">
+                        <i class="fa-solid fa-circle-play"></i>
+                        TRAILER
+                    </button>
+                    <button role="button" id="favorito" class="botao">
+                        <i class="fa-solid fa-heart"></i>
+                        FAVORITO
+                    </button>
                 </div>
             </div>
+        </div>
     </main>
 
 
     <div class="carrosel-filme">
         <div class="owl-carousel owl-theme">
             <div class="item">
-                <img class="box-filme" src="img/wd7b4Nv9QBHDTIjc2m7sr0IUMoh.jpg" alt="" onclick="filme01()">
+                <img class="box-filme" src="img/wd7b4Nv9QBHDTIjc2m7sr0IUMoh.jpg" alt="" onclick="filme01();">
             </div>
             <div class="item">
-                <img class="box-filme" src="img/11MJy6lkt7yTEIowEPIkaK4B7lM.jpg" alt="" onclick="filme02()">
+                <img class="box-filme" src="img/dvTTuRqwvM6wkDuA0JviE58NSRp.jpg" alt="" onclick="filme02();">
             </div>
             <div class="item">
-                <img class="box-filme" src="img/4g3UBFRKrA3Iq3wilqHhAIpQdTN (1).jpg" onclick="filme03()">
+                <img class="box-filme" src="img/soD18uucENplI81kUErvMzdb5Lm.jpg" onclick="filme03();">
             </div>
             <div class="item">
-                <img class="box-filme" src="img/725WE0Qb1BbUF7aGvjiQqzzffpg.jpg" onclick="filme04()">
+                <img class="box-filme" src="img/11MJy6lkt7yTEIowEPIkaK4B7lM.jpg" onclick="filme04();">
             </div>
             <div class="item">
-                <img class="box-filme" src="img/jtLB7xJKcbekmOYkb5NZditBsgk.jpg" onclick="filme05()">
+                <img class="box-filme" src="img/uog089YZqlMAplQwg68GQ4sexdY.jpg" onclick="filme05();">
             </div>
             <div class="item">
-                <img class="box-filme" src="img/m9cn5mhW519QKr1YGpGxNWi98VJ.jpg" onclick="filme06()">
+                <img class="box-filme" src="img/fVzXp3NwovUlLe7fvoRynCmBPNc.jpg" onclick="filme06();">
             </div>
             <div class="item">
-                <img class="box-filme" src="img/nJUHX3XL1jMkk8honUZnUmudFb9.jpg" onclick="filme07()">
+                <img class="box-filme" src="img/oGhSy2ao59xJDbCXyABofNhsV3o.jpg" onclick="filme07();">
             </div>
             <div class="item">
-                <img class="box-filme" src="img/pVL9AyKKLfUwrYD6jhdsI15gBQ7.jpg" onclick="filme08()">
+                <img class="box-filme" src="img/bfHTsg7YpUd7YkLSXEeTKjeg7BE.jpg" onclick="filme08();">
             </div>
             <div class="item">
-                <img class="box-filme" src="img/rqeYMLryjcawh2JeRpCVUDXYM5b.jpg" onclick="filme09()">
+                <img class="box-filme" src="img/gZuWBZVRJFvczvLUtdh9auGV1Nb.jpg" onclick="filme09();">
             </div>
             <div class="item">
-                <img class="box-filme" src="img/sw644BbNIxSGRqjwAC50uskDBHg.jpg" onclick="filme10()">
+                <img class="box-filme" src="img/Ak7vO8UJS32bOub3aWXCYl7YaQx.jpg" onclick="filme10();">
             </div>
         </div>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Seleção de Perfil</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="listaPerfil">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <img class="box-filme" src="img/scale1.png" alt="" onclick="perfil01();">
+                            </div>
+                            <div class="item">
+                                <img class="box-filme" src="img/scale2.png" alt="" onclick="perfil02();">
+                            </div>
+                            <div class="item">
+                                <img class="box-filme" src="img/scale3.png" alt="" onclick="perfil03();">
+                            </div>
+                            <div class="item">
+                                <img class="box-filme" src="img/scale4.png" alt="" onclick="perfil04();">
+                            </div>
+                            <div class="item">
+                                <img class="box-filme" src="img/scale5.png" alt="" onclick="perfil05();">
+                            </div>
+                            <div class="item">
+                                <img class="box-filme" src="img/scale6.png" alt="" onclick="perfil06();">
+                            </div>
+                            <div class="item">
+                                <img class="box-filme" src="img/scale.png" alt="" onclick="perfil();">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
+    <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/bb4095613e.js" crossorigin="anonymous"></script>
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/setup.js"></script>
     <script src="js/lista.js"></script>
+    <script src="js/perfil.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
 
 </body>
 
