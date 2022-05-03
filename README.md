@@ -17,3 +17,4 @@ Projeto Clone da NetFlix - BootCamp Carrefour Web Developer - .
 
 ![alt text](https://i.imgur.com/ZEo3SCJ.jpg)
 ![alt text](https://i.imgur.com/4aomb5q.jpg)
+![alt text](https://i.imgur.com/WyjIxlU.jpeg)
