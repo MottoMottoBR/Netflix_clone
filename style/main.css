@@ -3,6 +3,9 @@
     --cinza: #2b2e3f;
     --branco: #ffffff;
     --vermelho: #FF0000;
+    --azul: #367be3;
+
+
 }
 
 * {
@@ -15,7 +18,7 @@
 /* elemetos base*/
 
 body {
-    background: var(--cinza);
+    background-color: var(--cinza);
     font-family: 'Arial', Times, serif;
     color: #ffffff;
 }
@@ -25,6 +28,7 @@ header .container {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
 }
 
 header .logo {
@@ -32,6 +36,7 @@ header .logo {
     font-family: 'Arial Balck', Times;
     font-size: 40px;
     margin-left: 5px;
+
 }
 
 header nav a {
@@ -41,6 +46,7 @@ header nav a {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+
 }
 
 .menu {
@@ -85,6 +91,16 @@ header nav a:hover {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.categoria {
+    background-color: #2b2e3f;
+    margin-bottom: 15px;
+    font-size: 25px;
+    margin-left: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+
 .botao {
     margin-left: 15px;
     background-color: rgba(0, 0, 0, .50);
@@ -117,8 +133,8 @@ header nav a:hover {
 
 /*Perfil de usuario*/
 
-#fotoperfil{
-    background-image: url("/img/scale\ \(6\).png");
+#fotoperfil {
+    background-image: url("/img/blank-profile-picture-973460__340.webp");
 
 }
 

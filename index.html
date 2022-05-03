@@ -14,6 +14,7 @@
     <!-- owl css -->
     <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
     <link rel="stylesheet" href="style/main.css">
 
     <title>PIPOCANDO</title>
@@ -26,12 +27,11 @@
             <nav class="menu">
                 <i class="fa-solid fa-house"></i>
                 <a href="#">Inicio </a>
-                <i class="fa-solid fa-house"></i>
+                <i class="fa-solid fa-video"></i>
                 <a href="#">Séries</a>
-                <i class="fa-solid fa-house"></i>
+                <i class="fa-solid fa-film"></i>
                 <a href="#">Filmes</a>
-                <i class="fa-solid fa-heart"></i>
-                <a href="#">Favoritos</a>
+                
 
             </nav>
             <div>
@@ -44,17 +44,17 @@
     <main>
         <div class="filme-principal" id="bannerprincipal">
             <div class="container">
-                <h3 class="titulo" id="titulo">HOUSE OF CARDS</h3>
+                <h3 class="titulo" id="titulo">Batman 2022</h3>
                 <p class="descricao" id="descricao"> Após dois anos espreitando as ruas como Batman e aterrorizando o
                     mundo do crime, Bruce Wayne se encontra nas profundezas mais sombrias de Gotham City. Com
                     pouquíssimos aliados confiáveis dentro da rede corrupta de autoridades e grandes figuras da cidade,
                     o vigilante solitário se estabeleceu como a personificação da vingança para a população.</p>
                 <div class="botoes">
-                    <button role="button" id="trailer" class="botao">
+                    <button role="button" id="idtrailer" class="botao" onclick="trailer();">
                         <i class="fa-solid fa-circle-play"></i>
                         TRAILER
                     </button>
-                    <button role="button" id="favorito" class="botao">
+                    <button role="button" id="favoritos" class="botao" onclick="favadd();">
                         <i class="fa-solid fa-heart"></i>
                         FAVORITO
                     </button>
@@ -63,7 +63,13 @@
         </div>
     </main>
 
+    <div class="categoria">
+        FILMES 2022
+    </div>
+    
 
+
+    <!-- Modal do Perfil de usuario -->
     <div class="carrosel-filme">
         <div class="owl-carousel owl-theme">
             <div class="item">
@@ -99,12 +105,12 @@
         </div>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+     <!-- Modal do Perfil de usuario -->
+     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Seleção de Perfil</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Seleção de Foto </h5>
                 </div>
                 <div class="modal-body">
                     <div class="listaPerfil">
@@ -140,14 +146,19 @@
         </div>
     </div>
 
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+
     <script src="https://kit.fontawesome.com/bb4095613e.js" crossorigin="anonymous"></script>
     <script src="js/owl/jquery.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/setup.js"></script>
     <script src="js/lista.js"></script>
     <script src="js/perfil.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/mdb.min.js"></script>
+
 
 
 </body>
