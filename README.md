@@ -12,9 +12,9 @@ Projeto Clone da NetFlix - BootCamp Carrefour Web Developer - .
 
 ## Recursos
 
- 1. º Seleção de foto de perfil º 
+ 1. º Seleção de foto de perfil 
  2. º Cursor do mouse animado ao passar  na  Capa do filme 
- 3. º Mudança do Titulo, Descrição e Fundo do banner ao cliar em algum filme.
+ 3. º Mudança do Titulo, Descrição e Fundo do banner ao clicar em algum filme.
  
 
 ![alt text](https://i.imgur.com/ZEo3SCJ.jpg)
